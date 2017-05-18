@@ -11,6 +11,8 @@ shinyUI(fluidPage(
   
   # Here you will add the interactivity to your app
   # Create a selectInput where the user can select either Men, Women, or Both. 
+  
+  
   # Create a selectInput where the user can select if they Agree or Disagree.
 
   # Look at the Shiny documentation for selectInput and sliderInput syntax
@@ -19,11 +21,13 @@ shinyUI(fluidPage(
     sidebarPanel(
       #selectInput for Men, Women, or Both
       #inputID = sex
-      
+      selectInput("sex", label = "Sex", 
+        choices = list("Men", "Women", "Both"), selected = "both"),
       
       #selectInput for Agree or Disagree
       #inputID = thoughts
-      
+      selectInput("thoughts", label = "Position", 
+        choices = list("Agree", "Disagree"), selected = "Agree"),
       
     ),
     
