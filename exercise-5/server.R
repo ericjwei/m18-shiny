@@ -26,8 +26,7 @@ shinyServer(function(input, output) {
     #The dataset used will be filtered by sex
 
     #Filter the dataset based on whether the input is Men, Women, or Both
-    if(input$sex == "Men")
-  
+
     
     #Define a y axis value based on the input Agree or Disagree
 
